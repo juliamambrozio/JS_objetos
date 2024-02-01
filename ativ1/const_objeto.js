@@ -17,7 +17,6 @@ pessoa.nome = 'Júlia'
 console.log(pessoa.nome)
 
 //Notação literal
-
 const a = 0
 const b = 1
 const c = 2

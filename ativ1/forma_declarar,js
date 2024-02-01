@@ -1,0 +1,36 @@
+//Forma literal
+const objeto1 = {}
+
+const objeto2 = new Object
+
+//Função construtora
+function Pessoa(nome, idade){
+    this.nome = nome
+    this.idade = idade
+    this.falar =  () => {
+        console.log(nome,idade)
+    }
+}
+
+const objeto3 = new Pessoa('Júlia', 18)
+objeto3.falar()
+
+//Função factory
+function Pessoa2(nome, idade){
+    return {
+        nome,
+        idade,
+        falar() { 
+            console.log(nome,idade)
+        }
+    }
+}
+
+const objeto4 = Pessoa2('Gui', 18)
+const objeto5 = Pessoa2('Júlia', 18)
+objeto4.falar(), objeto5.falar()
+
+//Objeto create
+const objeto6 = Object.create(null)
+
+console.log(typeof(objeto6))

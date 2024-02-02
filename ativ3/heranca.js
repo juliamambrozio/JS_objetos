@@ -47,3 +47,19 @@ console.log(volvo.status())
 
 ferrari.acelerarMais(100)
 console.log(ferrari.status())
+
+const pai1 = {nome: 'Paulo', corCabelo: 'Preto'}
+const filha1 = Object.create(pai1) //já coloca todos os atributos do elemento pai no filho
+filha1.nome = 'Júlia'
+console.log(filha1.corCabelo)
+
+const filho1 = Object.create(pai1, {
+    nome: { value: 'Felipe', writabl: false, enumerable: true} //criando atributos direto
+})
+
+console.log(filho1.nome)
+
+for(let key in filho1){
+    filho1.hasOwnProperty(key) ? console.log(key) : console.log('Por herança' + key) 
+    //hasOwnProperty: verifica se o atributo veio de uma herança
+}

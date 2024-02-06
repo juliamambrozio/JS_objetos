@@ -1,0 +1,11 @@
+JAVASCRIPT OBJETOS---------------------------------------------------------------
+
+ativ1:
+Forma_declarar: formas de criar objetos
+Const_objetos: Object.freeze(fixar valores de objetos), notação literal, 
+criando atributo e atribuindo valor, formas de escrever função
+ativ2:
+Funções_importantes: como listar chaves e valores, percorrer o objeto,
+criar atributos, juntar objetos
+Getters_setter: get e set
+ativ3: herança e protótipo
